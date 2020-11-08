@@ -1,0 +1,170 @@
+[
+  {
+    "title": "Product 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 50.6,
+    "img": "",
+    "rating": 2
+  },
+  {
+    "title": "Product 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 34.99,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 90.8,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 4",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 20.49,
+    "img": "",
+    "rating": 3
+  },
+  {
+    "title": "Product 5",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 100,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 6",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 83.5,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 7",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 30.49,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 8",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 205,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 9",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 80,
+    "img": "",
+    "rating": 2
+  },
+  {
+    "title": "Product 10",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 79.99,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 11",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 40,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 12",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 43.99,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 13",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 120,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 14",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 99,
+    "img": "",
+    "rating": 3
+  },
+  {
+    "title": "Product 15",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 79.99,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 16",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 50,
+    "img": "",
+    "rating": 3
+  },
+  {
+    "title": "Product 17",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 60,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 18",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 109,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 19",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 20.5,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 20",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 58,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 21",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 99,
+    "img": "",
+    "rating": 5
+  },
+  {
+    "title": "Product 22",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 39.99,
+    "img": "",
+    "rating": 4
+  },
+  {
+    "title": "Product 23",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 20,
+    "img": "",
+    "rating": 2
+  },
+  {
+    "title": "Product 24",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+    "price": 39,
+    "img": "",
+    "rating": 5
+  }
+]

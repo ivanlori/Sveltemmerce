@@ -1,4 +1,10 @@
 <script lang="ts">
+  import Header from "./components/Header.svelte";
+  import Checkout from "./components/Checkout.svelte";
+  import Product from "./components/Product.svelte";
+  import Logo from "./components/Logo.svelte";
+  import data from "../products_mock.json";
+  import { system } from "./store";
 </script>
 
 <style>
@@ -7,13 +13,41 @@
     padding: 1em;
     max-width: 240px;
     margin: 0 auto;
+    @apply my-8;
   }
 
-  h1 {
-    color: #ff3e00;
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+  .prev-next {
+    @apply py-2;
+    @apply px-4;
+    @apply leading-tight;
+    @apply bg-white;
+    @apply border;
+    @apply border-gray-200;
+    @apply text-blue-700;
+    @apply border-r-0;
+    @apply ml-0;
+    @apply rounded-l;
+  }
+
+  .prev-next:hover {
+    @apply bg-blue-500;
+    @apply text-white;
+  }
+
+  .num {
+    @apply py-2;
+    @apply px-4;
+    @apply leading-tight;
+    @apply bg-white;
+    @apply border;
+    @apply border-gray-200;
+    @apply text-blue-700;
+    @apply border-r-0;
+  }
+
+  .num:hover {
+    @apply bg-blue-500;
+    @apply text-white;
   }
 
   @media (min-width: 640px) {
@@ -23,6 +57,40 @@
   }
 </style>
 
-<main>
-  <h1>Sveltemmerce</h1>
-</main>
+<div>
+  <Header />
+  {#if $system.checkoutOpen}
+    <Checkout />
+  {/if}
+  <main>
+    <div class="container mx-auto px-6">
+      <h3 class="text-gray-700 text-2xl font-medium">Our Products</h3>
+      <div
+        class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6">
+        {#each data as { price, title }, i}
+          <Product
+            id={i}
+            {price}
+            {title}
+            img={'https://loremflickr.com/320/240'} />
+        {/each}
+      </div>
+      <div class="flex justify-center">
+        <div class="flex rounded-md mt-8">
+          <a href="/" class="prev-next"><span>Previous</span></a>
+          <a href="/" class="num"><span>1</span></a>
+          <a href="/" class="num"><span>2</span></a>
+          <a href="/" class="num"><span>3</span></a>
+          <a href="/" class="prev-next"><span>Next</span></a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-gray-200">
+    <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+      <Logo width="150px" height="80px" />
+      <p class="py-2 text-gray-500 sm:py-0">Made with ❤️</p>
+    </div>
+  </footer>
+</div>
