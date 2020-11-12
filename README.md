@@ -1,11 +1,13 @@
-# Sveltemmerce - Ecommerce Template
-
-Responsive ecommerce template built with Svelte.js
+![GitHub Logo](public/logo.svg)
 
 [![Build Status](https://travis-ci.org/ivanlori/Sveltemmerce.svg)](https://travis-ci.org/ivanlori/Sveltemmerce)
 [![devDependency Status](https://david-dm.org/ivanlori/Sveltemmerce/dev-status.svg)](https://david-dm.org/ivanlori/Sveltemmerce#info=devDependencies)
 [![GitHub license](https://img.shields.io/github/license/ivanlori/Sveltemmerce.svg)](https://github.com/ivanlori/Sveltemmerce/blob/master/LICENSE)
 [![](https://img.shields.io/twitter/url/https/github.com/ivanlori/Sveltemmerce.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivanlori%2FSveltemmerce)
+
+# Sveltemmerce - Ecommerce Template
+
+Responsive ecommerce template built with Svelte.js and Tailwindcss
 
 ---
 
@@ -22,7 +24,7 @@ yarn install
 # serve with hot reload at localhost:5000
 yarn dev
 
-# prepare for production via webpack
+# prepare for production
 yarn build
 
 ```
