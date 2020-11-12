@@ -1,13 +1,15 @@
 <script lang="ts">
   import Icon from "fa-svelte";
-  import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+  import { faShoppingCart, faBars } from "@fortawesome/free-solid-svg-icons";
   import { system } from "../store";
   import Logo from "./Logo.svelte";
+
+  let isMenuMobileOpen: boolean = false;
 </script>
 
 <header>
   <div class="container mx-auto px-6 py-3">
-    <div class="flex justify-center">
+    <div class="flex">
       <Logo width="300px" height="120px" />
     </div>
     <div class="flex items-center justify-between">
@@ -20,20 +22,13 @@
           <Icon icon={faShoppingCart} />
         </button>
         <div class="flex sm:hidden">
-          <button
-            type="button"
-            class="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500"
-            aria-label="toggle menu">
-            <svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
-              <path
-                fill-rule="evenodd"
-                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
-            </svg>
+          <button on:click={() => (isMenuMobileOpen = !isMenuMobileOpen)}>
+            <Icon icon={faBars} />
           </button>
         </div>
       </div>
     </div>
-    <nav class="sm:flex sm:justify-center sm:items-center mt-4">
+    <nav class="{isMenuMobileOpen ? 'sm:flex' : 'hidden'} sm:flex mt-4">
       <div class="flex flex-col sm:flex-row">
         <a
           class="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0"
