@@ -1,7 +1,7 @@
 <script lang="ts">
   import Icon from "fa-svelte";
   import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
-  import { productAdded } from "../store";
+  import { cartContents, productsInCart } from "../store";
 
   export let id: number;
   export let img: string;
@@ -14,15 +14,10 @@
     return value > 1 ? value-- : value;
   }
 
-  function removeFromCart() {
-    $productAdded.forEach((el) => {
-      if (el.id === id && el.added) {
-        el.added = false;
-      }
-    });
+  function removeFromCart(id: number) {
+    productsInCart.update((items) => items - 1);
 
-    // for reactivity -> https://svelte.dev/tutorial/updating-arrays-and-objects
-    $productAdded = $productAdded;
+    cartContents.update((contents) => contents.filter((el) => el.id !== id));
   }
 </script>
 
@@ -31,20 +26,22 @@
   <div class="mx-3 w-full">
     <div class="flex justify-between items-center">
       <h3 class="text-sm text-gray-600">{name}</h3>
-      <button on:click={removeFromCart}>
+      <button on:click={() => removeFromCart(id)}>
         <Icon icon={faMinus} />
       </button>
     </div>
     <div class="flex items-center mt-2">
       <button
         class="text-gray-500 focus:outline-none focus:text-gray-600"
-        on:click={() => value++}>
+        on:click={() => value++}
+      >
         <Icon icon={faPlus} />
       </button>
       <span class="text-gray-700 mx-2">{value}</span>
       <button
         class="text-gray-500 focus:outline-none focus:text-gray-600"
-        on:click={decrement}>
+        on:click={decrement}
+      >
         <Icon icon={faMinus} />
       </button>
     </div>

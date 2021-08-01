@@ -1,7 +1,10 @@
-import { writable } from "svelte/store";
+import { writable, derived } from "svelte/store";
 
-export const system = writable({
-  checkoutOpen: false,
-});
+export const productsInCart = writable(0);
+export const cartContents = writable([]);
+export const checkoutOpened = writable(false);
 
-export const productAdded = writable([]);
+export const totalPrice = derived(
+  productsInCart,
+  ($productsInCart) => $productsInCart * $cartContents.price
+);
