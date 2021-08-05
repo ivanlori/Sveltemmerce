@@ -1,7 +1,60 @@
+<script lang="ts">
+  let coupon: string = "";
+  let couponDisplayed: string = "";
+</script>
+
 <form class="flex items-center justify-center">
-  <input class="form-input w-48" type="text" placeholder="Add promocode" />
-  <button
-    class="ml-3 flex items-center px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
-    <span>Apply</span>
-  </button>
+  {#if couponDisplayed}
+    <span class="uppercase">{couponDisplayed}</span>
+    <button class="coupon-btn remove" on:click={() => (couponDisplayed = "")}
+      >Remove</button
+    >
+  {:else}
+    <input
+      class="form-input w-48 p-3 uppercase"
+      bind:value={coupon}
+      type="text"
+      placeholder="Add Coupon"
+    />
+    <button
+      class="coupon-btn"
+      on:click={(e) => {
+        e.preventDefault();
+        couponDisplayed = coupon;
+      }}
+    >
+      <span>Apply</span>
+    </button>
+  {/if}
 </form>
+
+<style lang="scss">
+  .coupon-btn {
+    @apply ml-3;
+    @apply flex;
+    @apply items-center;
+    @apply px-3;
+    @apply py-2;
+    @apply bg-blue-600;
+    @apply text-white;
+    @apply text-sm;
+    @apply uppercase;
+    @apply font-medium;
+    @apply rounded;
+    &.remove {
+      @apply bg-red-500;
+    }
+
+    &:hover {
+      @apply bg-blue-500;
+
+      &.remove {
+        @apply bg-red-600;
+      }
+    }
+    &:focus {
+      @apply outline-none;
+      @apply bg-blue-500;
+    }
+  }
+</style>
