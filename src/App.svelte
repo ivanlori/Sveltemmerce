@@ -6,17 +6,11 @@
   import data from "../products_mock.json";
   import { checkoutOpened } from "./store";
 
-  let valueSearched: string = "";
-  const products = data;
-  let productSearched = [];
+  let productSearched: string = "";
 
-  function searchProduct() {
-    const filtered = products.filter((el) => {
-      return el.title.includes(valueSearched);
-    });
-
-    productSearched = [...filtered];
-  }
+  $: filteredList = data.filter((el) => {
+    return el.title.toLowerCase().includes(productSearched.toLowerCase());
+  });
 </script>
 
 <div>
@@ -41,8 +35,7 @@
         class="search"
         type="text"
         placeholder="Search"
-        bind:value={valueSearched}
-        on:keyup={searchProduct}
+        bind:value={productSearched}
       />
     </div>
     <div class="container mx-auto mt-5">
@@ -50,25 +43,14 @@
       <div
         class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-6"
       >
-        {#if valueSearched}
-          {#each productSearched as { price, title }, i}
-            <Product
-              id={i}
-              {price}
-              {title}
-              img={"https://loremflickr.com/320/240"}
-            />
-          {/each}
-        {:else}
-          {#each products as { price, title }, i}
-            <Product
-              id={i}
-              {price}
-              {title}
-              img={"https://loremflickr.com/320/240"}
-            />
-          {/each}
-        {/if}
+        {#each filteredList as { price, title, id }}
+          <Product
+            {id}
+            {price}
+            {title}
+            img={"https://loremflickr.com/320/240"}
+          />
+        {/each}
       </div>
       <div class="flex justify-center">
         <div class="flex rounded-md mt-8">
