@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { scale } from "svelte/transition";
   import ItemCart from "./ProductCart.svelte";
   import PromoCode from "./PromoCode.svelte";
   import { cartContents, productsInCart } from "../store";
@@ -10,7 +11,7 @@
   import { checkoutOpened } from "../store";
 </script>
 
-<div class="sidebar fixed">
+<div class="sidebar fixed" transition:scale>
   <div class="flex items-center justify-between">
     <h3 class="text-2xl font-medium text-gray-700">Your cart</h3>
     <button
