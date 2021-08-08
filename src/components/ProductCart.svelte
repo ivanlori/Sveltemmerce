@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "fa-svelte";
+  import Fa from 'svelte-fa/src/fa.svelte'
   import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
   import { cartContents, productsInCart } from "../store";
 
@@ -27,7 +27,7 @@
     <div class="flex justify-between items-center">
       <h3 class="text-sm text-gray-600">{name}</h3>
       <button on:click={() => removeFromCart(id)}>
-        <Icon icon={faMinus} />
+        <Fa icon={faMinus} />
       </button>
     </div>
     <div class="flex items-center mt-2">
@@ -35,14 +35,14 @@
         class="text-gray-500 focus:outline-none focus:text-gray-600"
         on:click={() => value++}
       >
-        <Icon icon={faPlus} />
+        <Fa icon={faPlus} />
       </button>
       <span class="text-gray-700 mx-2">{value}</span>
       <button
         class="text-gray-500 focus:outline-none focus:text-gray-600"
         on:click={decrement}
       >
-        <Icon icon={faMinus} />
+        <Fa icon={faMinus} />
       </button>
     </div>
     <div class="text-right">

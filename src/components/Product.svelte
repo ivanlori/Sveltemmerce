@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "fa-svelte";
+  import Fa from 'svelte-fa/src/fa.svelte'
   import { faMinus, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
   import { cartContents, productsInCart } from "../store";
 
@@ -43,12 +43,12 @@
   </div>
   {#if $cartContents.find((el) => el.id === id)}
     <button class="btn remove" on:click={() => removeFromBasket(id)}>
-      <Icon icon={faMinus} />
+      <Fa icon={faMinus} />
       Remove from Cart
     </button>
   {:else}
     <button class="btn" on:click={() => addToBasket(id)}>
-      <Icon icon={faShoppingCart} />
+      <Fa icon={faShoppingCart} />
       Add to Cart
     </button>
   {/if}
@@ -61,6 +61,9 @@
     @apply bg-blue-500;
     @apply text-white;
     @apply w-full;
+		@apply flex;
+		@apply justify-center;
+		@apply items-center;
 
     &.remove {
       @apply bg-red-500;

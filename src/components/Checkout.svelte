@@ -1,9 +1,9 @@
 <script lang="ts">
+	import Fa from 'svelte-fa/src/fa.svelte'
   import { scale } from "svelte/transition";
   import ItemCart from "./ProductCart.svelte";
   import PromoCode from "./PromoCode.svelte";
   import { cartContents, productsInCart } from "../store";
-  import Icon from "fa-svelte";
   import {
     faLongArrowAltRight,
     faTimes,
@@ -18,7 +18,7 @@
       class="text-gray-600 focus:outline-none"
       on:click={() => checkoutOpened.update(() => false)}
     >
-      <Icon icon={faTimes} />
+      <Fa icon={faTimes} />
     </button>
   </div>
   <hr class="my-3" />
@@ -42,7 +42,7 @@
     class="flex items-center justify-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
   >
     <span>Checkout</span>
-    <Icon icon={faLongArrowAltRight} />
+    <Fa icon={faLongArrowAltRight} />
   </div>
 </div>
 

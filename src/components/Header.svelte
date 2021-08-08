@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "fa-svelte";
+  import Fa from 'svelte-fa/src/fa.svelte'
   import { faShoppingCart, faBars } from "@fortawesome/free-solid-svg-icons";
   import { productsInCart, checkoutOpened } from "../store";
   import Logo from "./Logo.svelte";
@@ -19,16 +19,16 @@
           : 'hidden'} sm:flex items-center justify-end"
       >
         <div class="flex flex-col sm:flex-row">
-          <a class="menu sm:mx-3 sm:mt-0" href="/">Home</a>
-          <a class="menu sm:mx-3 sm:mt-0" href="/">Shop</a>
-          <a class="menu sm:mx-3 sm:mt-0" href="/">Categories</a>
-          <a class="menu sm:mx-3 sm:mt-0" href="/">Contact</a>
-          <a class="menu sm:mx-3 sm:mt-0" href="/">About</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="#">Home</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="#">Shop</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="#">Categories</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="#">Contact</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="#">About</a>
           <button
             class="mt-3 text-gray-600 focus:outline-none"
             on:click={() => checkoutOpened.update(() => true)}
           >
-            <Icon icon={faShoppingCart} />
+            <Fa icon={faShoppingCart} />
             {#if $productsInCart}
               <span class="bg-blue-400 text-white p-2">{$productsInCart}</span>
             {/if}
@@ -37,7 +37,7 @@
       </nav>
       <div class="flex sm:hidden">
         <button on:click={() => (isMenuMobileOpen = !isMenuMobileOpen)}>
-          <Icon icon={faBars} />
+          <Fa icon={faBars} />
         </button>
       </div>
     </div>

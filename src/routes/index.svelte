@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Header from "./components/Header.svelte";
-  import Checkout from "./components/Checkout.svelte";
-  import Product from "./components/Product.svelte";
-  import Logo from "./components/Logo.svelte";
-  import data from "../products_mock.json";
-  import { checkoutOpened } from "./store";
+  import Header from "./../components/Header.svelte";
+  import Checkout from "./../components/Checkout.svelte";
+  import Product from "./../components/Product.svelte";
+  import Logo from "./../components/Logo.svelte";
+  import data from "../../products_mock.json";
+  import { checkoutOpened } from "./../store";
 
   let productSearched: string = "";
 
@@ -72,7 +72,7 @@
   </footer>
 </div>
 
-<style lang="scss">
+<style>
   main {
     text-align: center;
     padding: 1em;
@@ -88,12 +88,13 @@
     @apply w-full;
     @apply pl-10;
     @apply pr-4;
-    &:focus {
+  }
+
+	.search:focus {
       @apply border-blue-500;
       @apply outline-none;
       @apply shadow-outline;
     }
-  }
 
   .prev-next {
     @apply py-2;
