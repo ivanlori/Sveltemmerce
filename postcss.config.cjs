@@ -6,10 +6,7 @@ module.exports = {
 
 		// But others, like autoprefixer, need to run after
 
-		require('autoprefixer')
-		// !dev &&
-		//  cssnano({
-		//      preset: 'default',
-		//  }),
+		require('autoprefixer'),
+		require('postcss-import')
 	]
 };
