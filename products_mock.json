@@ -4,7 +4,7 @@
     "title": "Product 1",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 50.6,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 2
   },
   {
@@ -12,7 +12,7 @@
     "title": "Product 2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 34.99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -20,7 +20,7 @@
     "title": "Product 3",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 90.8,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -28,7 +28,7 @@
     "title": "Product 4",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 20.49,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 3
   },
   {
@@ -36,7 +36,7 @@
     "title": "Product 5",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 100,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -44,7 +44,7 @@
     "title": "Product 6",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 83.5,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -52,7 +52,7 @@
     "title": "Product 7",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 30.49,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -60,7 +60,7 @@
     "title": "Product 8",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 205,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -68,7 +68,7 @@
     "title": "Product 9",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 80,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 2
   },
   {
@@ -76,7 +76,7 @@
     "title": "Product 10",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 79.99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -84,7 +84,7 @@
     "title": "Product 11",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 40,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -92,7 +92,7 @@
     "title": "Product 12",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 43.99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -100,7 +100,7 @@
     "title": "Product 13",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 120,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -108,7 +108,7 @@
     "title": "Product 14",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 3
   },
   {
@@ -116,7 +116,7 @@
     "title": "Product 15",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 79.99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -124,7 +124,7 @@
     "title": "Product 16",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 50,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 3
   },
   {
@@ -132,7 +132,7 @@
     "title": "Product 17",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 60,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -140,7 +140,7 @@
     "title": "Product 18",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 109,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -148,7 +148,7 @@
     "title": "Product 19",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 20.5,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -156,7 +156,7 @@
     "title": "Product 20",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 58,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -164,7 +164,7 @@
     "title": "Product 21",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   },
   {
@@ -172,7 +172,7 @@
     "title": "Product 22",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 39.99,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 4
   },
   {
@@ -180,7 +180,7 @@
     "title": "Product 23",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 20,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 2
   },
   {
@@ -188,7 +188,7 @@
     "title": "Product 24",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit,",
     "price": 39,
-    "img": "",
+    "img": "https://loremflickr.com/320/240",
     "rating": 5
   }
 ]
