@@ -3,7 +3,7 @@
 	"version": "0.5.0",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "rm -rf build && svelte-kit build && touch .svelte-kit/static/build/.nojekyll",
+		"build": "rm -rf build && svelte-kit build && touch .svelte-kit/static/build/.nojekyll ",
 		"deploy": "yarn build && npx gh-pages -d .svelte-kit/static/build -t true",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
@@ -12,8 +12,8 @@
 		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-static": "^1.0.0-next.17",
-		"@sveltejs/kit": "next",
+		"@sveltejs/adapter-static": "^1.0.0-next.21",
+		"@sveltejs/kit": "^1.0.0-next.201",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
 		"autoprefixer": "^10.3.1",

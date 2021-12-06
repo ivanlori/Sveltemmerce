@@ -15,12 +15,12 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
-		adapter: static_adapter()
-		// uncommnet for production
-		/* paths: {
-			base: '/sveltemmerce',
-			assets: '/sveltemmerce'
-		} */
+		adapter: static_adapter(),
+		// Comment the paths if wants to run in dev mode.		
+		paths: {
+			base: '/Sveltemmerce',
+			assets: 'https://ivanlori.github.io/Sveltemmerce'
+		}
 	}
 };
 
