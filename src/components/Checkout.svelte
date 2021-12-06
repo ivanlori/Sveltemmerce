@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Fa from 'svelte-fa/src/fa.svelte'
   import { scale } from "svelte/transition";
-  import ItemCart from "./ProductCart.svelte";
+  import ProductCart from "./ProductCart.svelte";
   import PromoCode from "./PromoCode.svelte";
-  import { cartContents, productsInCart } from "../store";
+  import { cartContents, productsInCart, totalPrice } from "../store";
   import {
     faLongArrowAltRight,
     faTimes,
@@ -26,10 +26,10 @@
     Your cart is empty
   {:else}
     {#each $cartContents as content}
-      <ItemCart
+      <ProductCart
         id={content.id}
-        name={content.title}
-        img="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80"
+        title={content.title}
+        img={content.img}
         price={content.price}
       />
     {/each}
@@ -38,6 +38,9 @@
   <div class="mt-8">
     <PromoCode />
   </div>
+	<div class="mt-3">
+		Total: {$totalPrice}
+	</div>
   <div
     class="flex items-center justify-center mt-4 px-3 py-2 bg-blue-600 text-white text-sm uppercase font-medium rounded hover:bg-blue-500 focus:outline-none focus:bg-blue-500"
   >
@@ -46,8 +49,9 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .sidebar {
+		@apply z-50;
     @apply right-0;
     @apply top-0;
     @apply max-w-xs;

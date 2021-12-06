@@ -19,18 +19,18 @@
           : 'hidden'} sm:flex items-center justify-end"
       >
         <div class="flex flex-col sm:flex-row">
-          <a class="menu sm:mx-3 sm:mt-0" href="#">Home</a>
+          <a class="menu sm:mx-3 sm:mt-0" href="/">Home</a>
           <a class="menu sm:mx-3 sm:mt-0" href="#">Shop</a>
           <a class="menu sm:mx-3 sm:mt-0" href="#">Categories</a>
           <a class="menu sm:mx-3 sm:mt-0" href="#">Contact</a>
           <a class="menu sm:mx-3 sm:mt-0" href="#">About</a>
           <button
-            class="mt-3 text-gray-600 focus:outline-none"
+            class="mt-3 text-gray-600 focus:outline-none flex items-center"
             on:click={() => checkoutOpened.update(() => true)}
           >
             <Fa icon={faShoppingCart} />
             {#if $productsInCart}
-              <span class="bg-blue-400 text-white p-2">{$productsInCart}</span>
+              <span class="bg-blue-400 text-white p-1 text-base">{$productsInCart}</span>
             {/if}
           </button>
         </div>
@@ -44,7 +44,7 @@
   </div>
 </header>
 
-<style>
+<style lang="postcss">
   .menu {
     @apply mt-3;
     @apply text-gray-600;

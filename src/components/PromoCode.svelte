@@ -28,7 +28,7 @@
   {/if}
 </form>
 
-<style lang="scss">
+<style lang="postcss">
   .coupon-btn {
     @apply ml-3;
     @apply flex;

@@ -4,7 +4,8 @@ export const productsInCart = writable(0);
 export const cartContents = writable([]);
 export const checkoutOpened = writable(false);
 
+
 export const totalPrice = derived(
-	productsInCart,
-	($productsInCart) => $productsInCart * $cartContents.price
+	cartContents,
+	($cartContents) => console.log($cartContents)
 );

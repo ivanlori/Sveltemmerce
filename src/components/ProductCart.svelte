@@ -5,7 +5,7 @@
 
   export let id: number;
   export let img: string;
-  export let name: string;
+  export let title: string;
   export let price: number;
 
   let value = 1;
@@ -22,10 +22,10 @@
 </script>
 
 <div id={String(id)} class="flex justify-between mt-6">
-  <img class="h-20 w-20 object-cover rounded" src={img} alt="" />
+  <img class="h-20 w-20 object-cover rounded" src={img} alt={`Product ${id}`} />
   <div class="mx-3 w-full">
     <div class="flex justify-between items-center">
-      <h3 class="text-sm text-gray-600">{name}</h3>
+      <h3 class="text-sm text-gray-600">{title}</h3>
       <button on:click={() => removeFromCart(id)}>
         <Fa icon={faMinus} />
       </button>
@@ -33,7 +33,10 @@
     <div class="flex items-center mt-2">
       <button
         class="text-gray-500 focus:outline-none focus:text-gray-600"
-        on:click={() => value++}
+        on:click={() => {
+					value++
+					cartContents.update()
+				}}
       >
         <Fa icon={faPlus} />
       </button>
