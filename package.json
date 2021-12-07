@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "rm -rf build && svelte-kit build && touch .svelte-kit/static/build/.nojekyll ",
-		"deploy": "yarn build && npx gh-pages -d .svelte-kit/static/build -t true",
+		"deploy": "node gh-pages.js",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
