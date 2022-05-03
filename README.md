@@ -1,33 +1,27 @@
-![Sveltemmerce Logo](public/logo.svg)
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/ivanlori/Sveltemmerce/master/media/Sveltemmerce-logo.jpg"
+    alt="Sveltemmerce – Ecommerce Template"
+  />
+</p>
+<h1 align="center">
+  Ecommerce template built with SvelteJs and TailwindCSS
+</h1>
+<p align="center">
+<a href="https://github.com/ivanlori/Sveltemmerce/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/ivanlori/Sveltemmerce"></a>
+<a href="https://github.com/ivanlori/Sveltemmerce/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/ivanlori/Sveltemmerce"></a>
+<a href="https://github.com/ivanlori/Sveltemmerce/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/ivanlori/Sveltemmerce"></a>
+<a href="https://github.com/ivanlori/Sveltemmerce/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/ivanlori/Sveltemmerce"></a>
+</p>
 
-[![Build Status](https://travis-ci.org/ivanlori/Sveltemmerce.svg)](https://travis-ci.org/ivanlori/Sveltemmerce)
-[![devDependency Status](https://david-dm.org/ivanlori/Sveltemmerce/dev-status.svg)](https://david-dm.org/ivanlori/Sveltemmerce#info=devDependencies)
-[![GitHub license](https://img.shields.io/github/license/ivanlori/Sveltemmerce.svg)](https://github.com/ivanlori/Sveltemmerce/blob/master/LICENSE)
-[![](https://img.shields.io/twitter/url/https/github.com/ivanlori/Sveltemmerce.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fivanlori%2FSveltemmerce)
+<p align="center">
+  <a href="https://ivanlori.github.io/Sveltemmerce">Check the DEMO out!</a>
+</p>
 
-# Sveltemmerce: E-commerce Template 🛒
-
-Responsive e-commerce template built with Svelte.js and Tailwindcss.
-
----
-
-## Features
-
-- Search product;
-- Product detail;
-- Quantity select;
-
-## Requisites
-
-What Svelte.js is? Check the [documentation](https://svelte.dev/) out
-
-What Tailwind CSS is? Check the [documentation](https://tailwindcss.com/) out
-
-## Installing
+## 🚀 Installation
 
 ```
-
-# clone the repository
+# clone repository
 git clone https://github.com/ivanlori/Sveltemmerce.git
 
 # install dependencies
@@ -36,26 +30,26 @@ yarn install
 # serve with hot reload at localhost:3000
 yarn dev
 
-# build for production
+# generate static pages for static hosting
 yarn build
-
 ```
 
----
+## 🐛 Bugs
 
-## Authors
+Have you found a bug? Feel free to open an <a href="https://github.com/ivanlori/Sveltemmerce/issues/new?assignees=&labels=&template=bug_report.md&title=">issue here</a>.
 
-- **Ivan Lori** - _Initial work_ - [ivanlori](https://github.com/ivanlori)
+## 🙋 Discussions
+Do you have questions, ideas or any request related to Sveltemmerce? Start a <a href="https://github.com/ivanlori/Sveltemmerce/discussions">discussion here</a>.
 
----
+## 📌 Changelog
 
-If you have any questions, feel free to email me at [ivan.lori@protonmail.com](mailto:ivan.lori@protonmail.com).
+See the release notes into [changelog.md](changelog.md)
 
----
+## 🏷️ License
 
-## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+## 📣 Vuemmerce is here
 
-Searching an ecommerce template made with Vue.js?
+Searching an ecommerce template built with VueJs and NuxtJs?
 Check [Vuemmerce](https://github.com/ivanlori/Vuemmerce) out!
